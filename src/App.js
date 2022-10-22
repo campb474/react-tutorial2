@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const club = "Web Dev Club";
+  const memberCount = 45;
+  const ecessLink = "https://www.purdue-ecess.org/";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          I have learned react
-        </a>
-      </header>
+      <div className="Content">
+        <h1>Welcome to { club }</h1>
+        <p>Member Count: { memberCount }</p>
+        <p>{ 1000 }</p>
+        <p>{ "String example" }</p>
+        <p>{ [1, 2, 3, 4, 5, 6, 7] }</p>
+        <p>{ Math.random() * 100 }</p>
+        <a href={ ecessLink }>ECESS Website</a>
+      </div>
     </div>
   );
 }
